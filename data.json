@@ -1,0 +1,164 @@
+[
+  {
+    "id": 0,
+    "country": "France",
+    "author": "Марсель Руссо",
+    "title": "Охота Амура",
+    "materials": "Холст, масло (50х80)",
+    "price": 14500,
+    "image": "img/pics/france-1.jpg"
+  },
+  {
+    "id": 1,
+    "country": "France",
+    "author": "Анри Селин",
+    "title": "Дама с собачкой",
+    "materials": "Акрил, бумага (50х80)",
+    "price": 16500,
+    "image": "img/pics/france-2.jpg"
+  },
+  {
+    "id": 2,
+    "country": "France",
+    "author": "Франсуа Дюпон",
+    "title": "Процедура",
+    "materials": "Цветная литография (40х60)",
+    "price": 20000,
+    "image": "img/pics/france-3.jpg"
+  },
+  {
+    "id": 3,
+    "country": "France",
+    "author": "Луи Детуш",
+    "title": "Роза",
+    "materials": "Бумага, акрил (50х80)",
+    "price": 12000,
+    "image": "img/pics/france-4.jpg"
+  },
+  {
+    "id": 4,
+    "country": "France",
+    "author": "Франсуа Дюпон",
+    "title": "Птичья трапеза",
+    "materials": "Цветная литография (40х60)",
+    "price": 22500,
+    "image": "img/pics/france-5.jpg"
+  },
+  {
+    "id": 5,
+    "country": "France",
+    "author": "Пьер Моранж",
+    "title": "Пейзаж с рыбой",
+    "materials": "Цветная литография (40х60)",
+    "price": 20000,
+    "image": "img/pics/france-6.jpg"
+  },
+  {
+    "id": 6,
+    "country": "Germany",
+    "author": "Курт Вернер",
+    "title": "Над городом",
+    "materials": "Цветная литография (40х60)",
+    "price": 16000,
+    "image": "img/pics/germany-1.jpg"
+  },
+  {
+    "id": 7,
+    "country": "Germany",
+    "author": "Макс Рихтер",
+    "title": "Птенцы",
+    "materials": "Холст, масло (50х80)",
+    "price": 14500,
+    "image": "img/pics/germany-2.jpg"
+  },
+  {
+    "id": 8,
+    "country": "Germany",
+    "author": "Мартин Майер",
+    "title": "Среди листьев",
+    "materials": "Цветная литография (40х60)",
+    "price": 20000,
+    "image": "img/pics/germany-3.jpg"
+  },
+  {
+    "id": 9,
+    "country": "Germany",
+    "author": "Герман Беккер",
+    "title": "Яркая птица",
+    "materials": "Цветная литография (40х60)",
+    "price": 13000,
+    "image": "img/pics/germany-4.jpg"
+  },
+  {
+    "id": 10,
+    "country": "Germany",
+    "author": "Вульф Бауэр",
+    "title": "Дятлы",
+    "materials": "Бумага, акрил (50х80)",
+    "price": 20000,
+    "image": "img/pics/germany-5.jpg"
+  },
+  {
+    "id": 11,
+    "country": "Germany",
+    "author": "Вальтер Хартманн",
+    "title": "Большие воды",
+    "materials": "Бумага, акрил (50х80)",
+    "price": 23000,
+    "image": "img/pics/germany-6.jpg"
+  },
+  {
+    "id": 12,
+    "country": "England",
+    "author": "Пол Смит",
+    "title": "Дикий зверь",
+    "materials": "Акварель, бумага (50х80)",
+    "price": 19500,
+    "image": "img/pics/england-1.jpg"
+  },
+  {
+    "id": 13,
+    "country": "England",
+    "author": "Джон Уайт",
+    "title": "Скалистый берег",
+    "materials": "БЦветная литография (40х60)",
+    "price": 17500,
+    "image": "img/pics/england-2.jpg"
+  },
+  {
+    "id": 14,
+    "country": "England",
+    "author": "Джим Уотсон",
+    "title": "Река и горы",
+    "materials": "Акварель, бумага (50х80)",
+    "price": 20500,
+    "image": "img/pics/england-3.jpg"
+  },
+  {
+    "id": 15,
+    "country": "England",
+    "author": "Юджин Зиллион",
+    "title": "Белый попугай",
+    "materials": "Цветная литография (40х60)",
+    "price": 15500,
+    "image": "img/pics/england-4.jpg"
+  },
+  {
+    "id": 16,
+    "country": "England",
+    "author": "Эрик Гиллман",
+    "title": "Ночная рыба",
+    "materials": "Бумага, акрил (50х80)",
+    "price": 12500,
+    "image": "img/pics/england-5.jpg"
+  },
+  {
+    "id": 17,
+    "country": "England",
+    "author": "Альфред Барр",
+    "title": "Рыжий кот",
+    "materials": "Цветная литография (40х60)",
+    "price": 21000,
+    "image": "img/pics/england-6.jpg"
+  }
+]

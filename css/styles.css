@@ -1,0 +1,566 @@
+:root {
+  --color-gin: #e1ede6;
+  --color-killarney: #376b44;
+  --color-shark: #2c2d35;
+  --color-surf: #d4e8d9;
+  --color-leaves: #598d66;
+  --color-mantle: #86928b;
+  --color-light: #f4f6f5;
+  --color-sand: #eedb6d;
+  --color-corn: #faeb97;
+  --color-mandalay: #a38314;
+  --color-anzac: #d9b949;
+
+  --font-base: 'Raleway', sans-serif;
+
+  --transition-duration: 0.16s;
+
+  --button-border: 1px solid var(--color-leaves);
+
+  --container-width: 1110px;
+  --container-padding: 15px;
+  --container-padding-tablet: 39px;
+  --container-padding-tablet-sm: 33px;
+  --container-padding-mobile: 15px;
+
+  --grid-gap: 30px;
+}
+
+body {
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-shark);
+  background-color: var(--color-light);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+a,
+button,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+.button {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 21px 45px;
+  transition-property: color, background-color;
+}
+
+.button--outline {
+  border: var(--button-border);
+  background-color: transparent;
+  color: var(--color-leaves);
+}
+
+.button--outline:focus {
+  outline: none;
+  background-color: var(--color-surf);
+  color: var(--color-leaves);
+}
+
+.button--outline:hover {
+  background-color: var(--color-leaves);
+  color: var(--color-light);
+}
+
+.button--outline:active {
+  background-color: var(--color-killarney);
+  color: #ffffff;
+}
+
+.container {
+  max-width: calc(var(--container-width) + 2 * var(--container-padding));
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
+/* ----------------------------Шапка---------------------------- */
+.header {
+  background-color: var(--color-gin);
+  padding-block: 32px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #4c5866;
+  transition-property: color;
+}
+
+.header__burger:hover {
+  color: var(--color-leaves);
+}
+
+.header__burger::before,
+.header__burger-line,
+.header__burger::after {
+  content: '';
+  width: 21px;
+  height: 2px;
+  background-color: currentColor;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.header__burger--active {
+  gap: 0;
+}
+
+.header__burger--active .header__burger-line {
+  display: none;
+}
+
+.header__burger--active::before {
+  transform: translateY(1px) rotate(45deg);
+}
+
+.header__burger--active::after {
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__menu-link {
+  font-size: 20px;
+  line-height: 23px;
+  padding-inline: 5px;
+  transition-property: color, background-color;
+}
+
+.header__menu-link:focus {
+  outline: none;
+  background-color: var(--color-surf);
+}
+
+.header__menu-link:hover {
+  color: var(--color-leaves);
+}
+
+.header__menu-link:active {
+  color: var(--color-killarney);
+}
+
+.header__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--color-shark);
+}
+
+.header__cart:hover {
+  color: var(--color-leaves);
+}
+
+/* ----------------------------Hero---------------------------- */
+.hero {
+  padding-bottom: 70px;
+}
+
+.hero__grid {
+  align-items: center;
+}
+
+.hero__image {
+  grid-column: 1 / 7;
+}
+
+.hero__content {
+  grid-column: 7 / 13;
+}
+
+.hero__title {
+  font-size: clamp(30px, 5.208vw, 60px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero__brand {
+  color: var(--color-leaves);
+}
+
+.hero__description {
+  font-size: clamp(14px, 2.78vw, 18px);
+  line-height: 1.5;
+  color: var(--color-mantle);
+  margin-bottom: 60px;
+}
+
+/* ----------------------------Каталог---------------------------- */
+.catalog {
+  padding-bottom: 70px;
+}
+
+.catalog__top {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.catalog__title {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.catalog__tabs-list {
+  display: flex;
+  gap: 30px;
+}
+
+.tab {
+  font-size: 20px;
+  line-height: 23px;
+  padding: 10px 20px;
+  border: none;
+  color: var(--color-shark);
+  background-color: var(--color-surf);
+  border-radius: 20px;
+  transition-property: background-color, color;
+}
+
+.tab--current {
+  background-color: var(--color-killarney);
+  color: var(--color-light);
+}
+
+.tab:hover {
+  background-color: var(--color-leaves);
+  color: var(--color-light);
+}
+
+.tab:active {
+  background-color: var(--color-killarney);
+}
+
+.catalog__products-item {
+  grid-column: span 4;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gin);
+  padding: 20px 20px 30px;
+  height: 100%;
+}
+
+.product__image {
+  margin-bottom: 20px;
+}
+
+.product__author {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-mantle);
+  line-height: 21px;
+}
+
+.product__title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 8px;
+}
+
+.product__materials {
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.product__price {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-leaves);
+}
+
+.product__button {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ----------------------------Промо---------------------------- */
+.promo {
+  position: relative;
+  background-image: url('../img/promo-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  filter: blur(315px);
+  mix-blend-mode: multiply;
+  background-color: rgba(13, 43, 67, 0.8);
+}
+
+.promo__container {
+  padding-block: 70px;
+}
+
+.promo__title {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(24px, 4.16vw, 40px);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.promo__title::before {
+  content: '';
+  display: inline-block;
+  width: clamp(50px, 8.68vw, 80px);
+  aspect-ratio: 1 / 1;
+  background-image: url(../img/star-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__title-wrapper {
+  max-width: 420px;
+}
+
+.promo__description {
+  position: relative;
+  z-index: 3;
+  max-width: 540px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: clamp(16px, 2.77vw, 18px);
+}
+
+.promo__description:nth-of-type(2) {
+  margin-bottom: 60px;
+}
+
+.promo__button {
+  position: relative;
+  z-index: 3;
+  background-color: var(--color-sand);
+  color: var(--color-shark);
+  border: 1px solid transparent;
+}
+
+.promo__button:focus {
+  outline: none;
+  border-color: var(--color-mandalay);
+}
+
+.promo__button:hover {
+  background-color: var(--color-corn);
+}
+
+.promo__button:active {
+  background-color: var(--color-anzac);
+}
+
+/* ----------------------------Команда---------------------------- */
+.about {
+  padding-block: 70px;
+}
+
+.about__image {
+  grid-column: 1 / 6;
+}
+
+.about__content {
+  grid-column: 6 / -1;
+  padding-top: 124px;
+}
+
+.about__title {
+  font-size: clamp(24px, 3.91vw, 40px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.about__description {
+  font-size: clamp(16px, 2.78vw, 18px);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about__team-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* ----------------------------Футер---------------------------- */
+.footer {
+  padding-block: 23px;
+  background-color: var(--color-gin);
+}
+
+.footer__container {
+  display: flex;
+  gap: 115px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+.footer__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__phone-link {
+  line-height: 23px;
+  font-size: 20px;
+  transition-property: color;
+}
+
+.footer__phone-link:hover {
+  color: var(--color-leaves);
+}
+
+.footer__phone-text {
+  line-height: 21px;
+  color: var(--color-mantle);
+}
+
+.footer__menu {
+  display: flex;
+  flex-grow: 1;
+}
+
+.footer__menu-categories {
+  display: flex;
+  gap: 60px;
+  margin-right: auto;
+}
+
+.footer__category-title {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 6px;
+}
+
+.footer__category-list {
+  color: var(--color-mantle);
+}
+
+.footer__category-item {
+  margin-bottom: 6px;
+}
+
+.footer__category-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__category-link {
+  transition-property: color;
+}
+
+.footer__category-link:hover {
+  color: var(--color-leaves);
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__social-link:hover {
+  color: var(--color-leaves);
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--color-mantle);
+}
+
+.footer__copyright span {
+  display: block;
+  margin-top: 6px;
+}
